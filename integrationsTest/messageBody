@@ -1,0 +1,79 @@
+{
+    "JournalEntryBulkCreateRequest": {
+        "MessageHeader": {
+            "ID": "MSG_2024-03-01",
+            "CreationDateTime": "2024-04-24T00:00:00.1234567Z",
+            "JournalEntry": {
+                "CreationDateTime": "2024-04-24T12:00:00.1234567Z",
+                "OriginalReferenceDocumentType": "BKPFF",
+                "BusinessTransactionType": "RFBU",
+                "AccountingDocumentType": "DR",
+                "DocumentReferenceID": "051",
+                "DocumentHeaderText": "Test Consumo Cliente",
+                "CreatedByUser": "CB9980000001",
+                "CompanyCode": "4610",
+                "DocumentDate": "2024-04-24",
+                "PostingDate": "2024-04-24",
+                "TaxDeterminationDate": "2024-04-24",
+                "Reference1InDocumentHeader": "12345678901234567890",
+                "Reference2InDocumentHeader": "1234567890",
+                "Item": [{
+                        "ReferenceDocumentItem": "1",
+                        "GLAccount": "0021123000",
+                        "AmountInTransactionCurrency": "-1350000",
+                        "currencyCode": "CLP",
+                        "DebitCreditCode": "H",
+                        "DocumentItemText": "Provisión Pago Cursos Normales",
+                        "AssignmentReference": "7176734",
+                        "Tax": {
+                            "TaxCode": "D0"
+                        },
+                        "AccountAssignment": {
+                            "ProfitCenter": "YB600",
+                            "Segment": "1000_C"
+                        },
+                        "ProfitabilitySupplement": {
+                            "Customer": "0046100001"
+                        }
+                    }, {
+                        "ReferenceDocumentItem": "2",
+                        "GLAccount": "0021123000",
+                        "AmountInTransactionCurrency": "-175000",
+                        "currencyCode": "CLP",
+                        "DebitCreditCode": "H",
+                        "DocumentItemText": "Prov.x Pagar Viát. y Trasl.",
+                        "AssignmentReference": "7176734",
+                        "Tax": {
+                            "TaxCode": "D0"
+                        },
+                        "AccountAssignment": {
+                            "ProfitCenter": "YB600",
+                            "Segment": "1000_C"
+                        },
+                        "ProfitabilitySupplement": {
+                            "Customer": "0046100001"
+                        }
+                    }
+                ],
+                "DebtorItem": {
+                    "ReferenceDocumentItem": "3",
+                    "Debtor": "0046100001",
+                    "AltvRecnclnAccts": "0012100100",
+                    "AmountInTransactionCurrency": "1525000",
+                    "currencyCode": "CLP",
+                    "DebitCreditCode": "S",
+                    "DocumentItemText": "Capacitación Cursos"
+                },
+                "ProductTaxItem": {
+                    "TaxCode": "D0",
+                    "TaxItemClassification": "MWS",
+                    "AmountInTransactionCurrency": "0",
+                    "currencyCode": "CLP",
+                    "DebitCreditCode": "H",
+                    "TaxBaseAmountInTransCrcy": "-1525000",
+
+                }
+            }
+        }
+    }
+}
